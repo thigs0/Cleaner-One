@@ -20,3 +20,12 @@ To run, install
     Pkg.add("Plots")
     Pkg.add("")
 ```
+(Integer programing)[./functions/PI.jl]
+
+    - Runs the algorith that resolve the matrix (Ax=b)
+    - Return the best path
+
+    
+(Draw path)[./functions/DrawPath.jl]
+
+    - Draw the path that the robot will follow and save as image

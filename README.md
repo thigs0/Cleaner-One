@@ -35,4 +35,5 @@ To run, install
 - [] Implement the Branch-and-Bound method in directory functions
 - [] Implement PlanoDCorte in directory functions
 - [] Implement tests with result we lnow
+- [] Implement non linear optimization
 - 

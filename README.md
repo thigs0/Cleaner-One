@@ -31,6 +31,8 @@ To run, install
     - Draw the path that the robot will follow and save as image
 
 ## TO DO
-[] Implement the Branch-and-Bound method in directory functions
-[] Implement PlanoDCorte in directory functions
-[] Implement tests with result we lnow
+- [] Consider what otimizer we will use
+- [] Implement the Branch-and-Bound method in directory functions
+- [] Implement PlanoDCorte in directory functions
+- [] Implement tests with result we lnow
+- 

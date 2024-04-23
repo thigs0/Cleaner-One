@@ -29,3 +29,8 @@ To run, install
 (Draw path)[./functions/DrawPath.jl]
 
     - Draw the path that the robot will follow and save as image
+
+## TO DO
+[] Implement the Branch-and-Bound method in directory functions
+[] Implement PlanoDCorte in directory functions
+[] Implement tests with result we lnow

@@ -1,5 +1,5 @@
 # Cleaner-One
-Algorithm to find best path to cleaner your house using **Julia language**
+Algorithm to find best path to cleaner your house using **python language**
 
 The code above is based at inter optimization.
 The place is considered a subset of points like image 
@@ -12,6 +12,15 @@ Restricttions
 - batery limitation
 - Region Sleepest than others
 - Exists times that are minus humans at place
+
+### Methods
+
+- create mesh
+```self.CreateMesh(n, number\_trash)```
+
+this method create a mesh with intern point that can be dirt or not, with size nxn
+and number of trash point 
+
 
 ### Implementation
 ```

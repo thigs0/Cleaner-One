@@ -14,21 +14,33 @@ Restricttions
 - Exists times that are minus humans at place
 
 ### Implementation
-To run, install 
-``` using Pkg
-    Pkg.add("LinearAlgebra")
-    Pkg.add("Plots")
-    Pkg.add("")
 ```
-(Integer programing)[./functions/PI.jl]
+n=4
+clear = Cleanerrobot(MaxTrash=4*n)
+clear.CreateMesh(n, number_trash=1)
+clear.mesh
 
-    - Runs the algorith that resolve the matrix (Ax=b)
-    - Return the best path
+t1 = clear.AdMatrix
+plt.imshow(clear.mesh, interpolation='nearest')
+plt.savefig("test.png")
 
-    
-(Draw path)[./functions/DrawPath.jl]
+p= clear.TrashPoints[0]
 
-    - Draw the path that the robot will follow and save as image
+print("Gerando as soluções")
+a = clear.GenerateNSoluction(p, 100)
+
+print("gerando as gerações")
+x, best = clear.CreateNGenerations(n=100, return_fmean=True, return_fbest=True, population=2, elitismo=3)
+
+df = pd.DataFrame(columns=["Generation", "Mean", "Best"])
+df["Generation"] = np.arange(len(x))
+df["Mean"] = x
+df["Best"] = best
+plt.plot(df["Generation"], df["Mean"], label="Média da geração")
+plt.plot(df["Generation"], df["Best"], label="Melhor indivíduo")
+plt.title("Avaliação das gerações")
+plt.legend()
+```
 
 ## TO DO
 - [] Consider what otimizer we will use
